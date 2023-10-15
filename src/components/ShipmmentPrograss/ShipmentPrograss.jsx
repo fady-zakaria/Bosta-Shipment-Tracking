@@ -12,7 +12,6 @@ import {
 } from "../../Pages/ShipmentsTrack/ShipmentsTrack.factory";
 import { translate } from "../../utils/Language";
 import "../../App.css";
-import ItemList from "../ItemList/ItemList";
 import SmallViewRender from "./SmallViewRender";
 
 const ShipmentPrograss = () => {

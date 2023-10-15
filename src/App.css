@@ -1,0 +1,40 @@
+.bostaShadowBox{
+  box-shadow: 0 0 1px 1px #e4e7ec, 0 4px 4px rgba(29,41,57,.05);
+}
+
+.flipImg{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.bottomThree{
+  bottom: -3rem
+}
+
+.bottomFour{
+  bottom: -4rem
+}
+
+.bosta-warning-text{
+  color: #ffa500;
+}
+.bosta-green-text{
+  color: #5cb86e;
+}
+.bosta-red-text{
+  color: #e30613;
+}
+.bosta-warning-bg{
+  background-color: #ffa500;
+}
+.bosta-green-bg{
+  background-color: #5cb86e;
+}
+.bosta-red-bg{
+  background-color: #e30613;
+}
+
+.helpImg{
+  max-width: 24px;
+  max-height: 24px;
+}

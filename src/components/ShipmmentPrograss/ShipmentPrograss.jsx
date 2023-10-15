@@ -12,6 +12,8 @@ import {
 } from "../../Pages/ShipmentsTrack/ShipmentsTrack.factory";
 import { translate } from "../../utils/Language";
 import "../../App.css";
+import ItemList from "../ItemList/ItemList";
+import SmallViewRender from "./SmallViewRender";
 
 const ShipmentPrograss = () => {
   const { trakingStatus, statusData } = useSelector(
@@ -22,6 +24,14 @@ const ShipmentPrograss = () => {
 
   const [bgColor, setBgColor] = useState("");
   const [textColor, settextColor] = useState("");
+
+  const [smallView, setSmallView] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("resize", () =>
+      window.innerWidth > 959 ? setSmallView(false) : setSmallView(true)
+    );
+  }, [window.innerWidth]);
 
   useEffect(() => {
     setBgColor(getBgColor(statusData));
@@ -48,7 +58,7 @@ const ShipmentPrograss = () => {
         </Step>
         <Step completedClassName={bgColor}>
           <BsCheck className="h-7 w-7" />
-          <div className="absolute -bottom-[3rem] w-max text-center flex flex-wrap">
+          <div className="absolute -bottom-[3rem] w-max text-center hidden lg:flex lg:flex-wrap">
             <Typography
               color={"black"}
               className="font-display font-bold text-sm"
@@ -99,6 +109,7 @@ const ShipmentPrograss = () => {
           </div>
         </Step>
       </Stepper>
+      {smallView && <SmallViewRender textColor={textColor} />}
     </div>
   );
 };

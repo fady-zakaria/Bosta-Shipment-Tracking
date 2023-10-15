@@ -16,7 +16,7 @@ const ShipmentsTrack = () => {
   const { loading } = useSelector((state) => state.shipmentsState);
 
   useEffect(() => {
-    dispatch(getTrackingData(trackingNumbers[2]));
+    dispatch(getTrackingData(trackingNumbers[0]));
   }, [dispatch, i18n.language]);
 
   return (

@@ -4,9 +4,11 @@ import { translate } from "../../utils/Language";
 import { FiSearch } from "react-icons/fi";
 import { useDispatch } from "react-redux";
 import { getTrackingData } from "../../redux/features/shipmentsTrackSlice/shipmentsTrackSlice";
+import { useNavigate } from "react-router-dom";
 
 const SearchBox = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const [number, setNumber] = useState("");
 
@@ -34,6 +36,7 @@ const SearchBox = () => {
           onClick={() => {
             if (number) {
               dispatch(getTrackingData(number));
+              navigate("/");
             }
           }}
         >

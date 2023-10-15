@@ -97,15 +97,15 @@ const getBgColor = (statusData) => {
 const centerLinks = () => {
   return [
     { id: 1, name: `${translate("home")}`, link: "/" },
-    { id: 2, name: `${translate("pricing")}`, link: "/" },
-    { id: 3, name: `${translate("callSales")}`, link: "/" },
+    { id: 2, name: `${translate("pricing")}`, link: "/pricing" },
+    { id: 3, name: `${translate("callSales")}`, link: "/callsales" },
   ];
 };
 
 const otherLinks = () => {
   return [
     { id: 4, name: `${translate("trackShipment")}`, searchBar: true },
-    { id: 5, name: `${translate("login")}`, link: "/" },
+    { id: 5, name: `${translate("login")}`, link: "/login" },
   ];
 };
 

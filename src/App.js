@@ -8,6 +8,7 @@ import { setLanguage } from "./redux/features/languageSlice/languageSlice";
 import moment from "moment";
 import "moment/locale/ar";
 import { Spinner } from "@material-tailwind/react";
+import NotFound from "./Pages/NotFound/NotFound";
 
 const ShipmentsTrack = lazy(() =>
   import("./Pages/ShipmentsTrack/ShipmentsTrack")
@@ -45,7 +46,7 @@ function App() {
         <>
           <Routes>
             <Route path="/" element={<ShipmentsTrack />} />
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </>
       </Suspense>

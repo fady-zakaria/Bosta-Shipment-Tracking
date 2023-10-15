@@ -38,3 +38,8 @@
   max-width: 24px;
   max-height: 24px;
 }
+
+.navbarStyle{
+  flex-basis: 80%;
+  justify-content: center;
+}

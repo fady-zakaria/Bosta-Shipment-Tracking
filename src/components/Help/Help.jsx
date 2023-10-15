@@ -5,7 +5,7 @@ import "../../App.css";
 
 const Help = () => {
   return (
-    <div className="flex lg:flex-col xl:flex-row flex-row py-10 ps-6 pe-14 rounded-lg bostaShadowBox gap-12">
+    <div className="flex xl:flex-col 2xl:flex-row flex-row py-10 ps-6 pe-14 rounded-lg bostaShadowBox gap-12 overflow-hidden">
       <img
         className="h-24 w-24 object-cover object-center"
         src="assets/images/help2.jpg"

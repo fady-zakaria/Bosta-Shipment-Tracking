@@ -62,12 +62,12 @@ const NavBar = () => {
         </div>
         <div className="flex items-center flex-1 pt-1.5">
           <div className="hidden lg:flex lg:justify-between lg:flex-row items-center flex-1">
-            <NavLinks links={centerLinks()} open={openNav} />
-            <NavLinks links={otherLinks()} open={openNav} />
+            <NavLinks links={centerLinks()} style={true} />
+            <NavLinks links={otherLinks()} />
           </div>
           <IconButton
             variant="text"
-            className="ml-auto h-6 w-6 text-bosta-red hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            className="ms-auto h-6 w-6 text-bosta-red hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
           >

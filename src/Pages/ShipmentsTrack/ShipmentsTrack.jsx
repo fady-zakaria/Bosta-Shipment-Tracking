@@ -28,7 +28,7 @@ const ShipmentsTrack = () => {
       ) : (
         <>
           <ShipmentData />
-          <div className="flex lg:flex-row flex-col mt-20 pb-10 mx-12 gap-x-5 gap-y-7">
+          <div className="flex xl:flex-row flex-col mt-20 pb-10 mx-12 gap-x-5 gap-y-7">
             <ShipmentDetails />
             <div className="flex flex-col gap-5">
               <DeliveryAddress />

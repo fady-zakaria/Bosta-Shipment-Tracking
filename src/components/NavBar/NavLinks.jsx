@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import SearchBox from "../SearchBox/SearchBox";
 
-const NavLinks = ({ links }) => {
+const NavLinks = ({ links, style }) => {
   const [openPopover, setOpenPopover] = useState(false);
 
   const triggers = {
@@ -17,7 +17,11 @@ const NavLinks = ({ links }) => {
   };
 
   return (
-    <ul className="mb-2 mt-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul
+      className={`mb-2 mt-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ${
+        style && "navbarStyle"
+      }`}
+    >
       {links.map((link, index) => (
         <React.Fragment key={link?.id}>
           {Boolean(link?.searchBar) ? (
